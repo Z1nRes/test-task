@@ -13,7 +13,7 @@ modalWindow.addEventListener("click", () => {
     modalWindow.classList.add('hidden')
     successModal.classList.remove('d-flex')
     successModal.classList.add('hidden')
-    formModal.classList.remove('d-flex')
+    formModal.classList.remove('d-block')
     formModal.classList.add('hidden')
 })
 
