@@ -21,8 +21,8 @@ btnEquity.addEventListener("click", () => {
     modalWindow.classList.remove('hidden')
     modalWindow.classList.add('d-flex')
 
-    successModal.classList.remove('hidden')
-    successModal.classList.add('d-flex')
+    formModal.classList.remove('hidden')
+    formModal.classList.add('d-block')
 })
 
 btnEarlyAccess.addEventListener("click", () => {
@@ -45,8 +45,8 @@ btnContact.addEventListener("click", () => {
     modalWindow.classList.remove('hidden')
     modalWindow.classList.add('d-flex')
 
-    formModal.classList.remove('hidden')
-    formModal.classList.add('d-block')
+    successModal.classList.remove('hidden')
+    successModal.classList.add('d-flex')
 })
 
 burgerBtn = document.querySelector('.burger-btn')
