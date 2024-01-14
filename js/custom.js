@@ -1,7 +1,8 @@
+const body = document.body
 
-btnEquity = document.querySelector('.equity-content-btn')
-btnEarlyAccess = document.querySelector('.get-early-access-btn')
-btnBlog = document.querySelector('.news-btn')
+const btnEquity = document.querySelector('.equity-content-btn')
+const btnEarlyAccess = document.querySelector('.get-early-access-btn')
+const btnBlog = document.querySelector('.news-btn')
 
 function handleFormSubmit(event) {
     event.preventDefault()
@@ -15,6 +16,7 @@ function handleFormSubmit(event) {
     successModal.classList.remove('hidden')
     successModal.classList.add('d-flex')
 
+    body.classList.add('scroll-none')
     event.target.reset(); 
 }
 
@@ -24,9 +26,9 @@ for (let form in applicantForm){
     applicantForm[form].addEventListener('submit', handleFormSubmit)
 }
 
-modalWindow = document.querySelector('.modal-window')
-successModal = document.querySelector('.success-modal')
-formModal = document.querySelector('.modal-signup')
+const modalWindow = document.querySelector('.modal-window')
+const successModal = document.querySelector('.success-modal')
+const formModal = document.querySelector('.modal-signup')
 
 modalWindow.addEventListener("click", ({target}) => {
     if (target.classList.contains('modal-window')) {
@@ -36,16 +38,18 @@ modalWindow.addEventListener("click", ({target}) => {
         successModal.classList.add('hidden')
         formModal.classList.remove('d-block')
         formModal.classList.add('hidden')
+        body.classList.toggle('scroll-none')
     }
 })
 
 btnEquity.addEventListener("click", () => {
-    
     modalWindow.classList.remove('hidden')
     modalWindow.classList.add('d-flex')
 
     formModal.classList.remove('hidden')
     formModal.classList.add('d-block')
+
+    body.classList.toggle('scroll-none')
 })
 
 btnBlog.addEventListener("click", () => {
@@ -54,11 +58,32 @@ btnBlog.addEventListener("click", () => {
 
     successModal.classList.remove('hidden')
     successModal.classList.add('d-flex')
+
+    body.classList.toggle('scroll-none')
 })
 
-burgerBtn = document.querySelector('.burger-btn')
-burgerMenu = document.querySelector('.burger-menu')
+const burgerBtn = document.querySelector('.burger-btn')
+const burgerMenu = document.querySelector('.burger-menu')
+const burgerMenuWrapper = document.querySelector('.burger-menu-wrapper')
+
+function burgerFunction() {
+    burgerMenu.classList.toggle('hidden')
+    burgerMenuWrapper.classList.toggle('hidden')
+    body.classList.toggle('scroll-none')
+}
+
+const burgerMenuLinks = Object.values(document.querySelectorAll('.header-nav-link-mobile'))
+
+for (let link in burgerMenuLinks){
+    burgerMenuLinks[link].addEventListener("click", burgerFunction)
+}
 
 burgerBtn.addEventListener("click", () => {
-    burgerMenu.classList.toggle('hidden')
+    burgerFunction()
+})
+
+burgerMenuWrapper.addEventListener("click", ({target}) => {
+    if (target.classList.contains('burger-menu-wrapper')) {
+        burgerFunction()
+    }
 })

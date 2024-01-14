@@ -14,7 +14,7 @@
     <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js" data-skip-moving="true"></script>
     <![endif]-->
   </head>
-  <body>
+  <body class="">
     
     <header>
         <div class="header d-flex justify-content-between align-items-center ">
@@ -40,22 +40,25 @@
               <a href="https://medium.com/" class="header-social-link"><img loading="lazy" src="./images/Medium.svg" alt="error"></a>
             </div>
           </div>
-        
-          <div class="hidden burger-menu flex-column">
-            <nav class="d-flex flex-column">
-              <a href="#digital-securities" class="header-nav-link text-decoration-none text-black">What Are Digital Securities?</a>
-              <a href="#products" class="header-nav-link text-decoration-none text-black">Products</a>
-              <a href="#digitize-your-business" class="header-nav-link text-decoration-none text-black">Digitize Your Business</a>
-              <a href="#blog" class="header-nav-link text-decoration-none text-black">Blog</a>
-              <a href="#contact-us" class="header-nav-link text-decoration-none text-black">Contact Us</a>
-            </nav>
-            <div class="header-social-burger">
-              <a href="https://twitter.com/" class="header-social-link"><img src="./images/Twitter(Traced).svg" alt="error"></a>
-              <a href="https://www.facebook.com/" class="header-social-link"><img src="./images/Facebook(Traced).svg" alt="error"></a>
-              <a href="https://ru.linkedin.com/" class="header-social-link"><img src="./images/Linkedin(Traced).svg" alt="error"></a>
-              <a href="https://medium.com/" class="header-social-link"><img src="./images/Medium(3).svg" alt="error"></a>
+
+        <div class="hidden burger-menu-wrapper">
+            <div class="hidden burger-menu flex-column">
+                <nav class="d-flex flex-column">
+                    <a href="#digital-securities" class="header-nav-link header-nav-link-mobile text-decoration-none text-black">What Are Digital Securities?</a>
+                    <a href="#products" class="header-nav-link header-nav-link-mobile text-decoration-none text-black">Products</a>
+                    <a href="#digitize-your-business" class="header-nav-link header-nav-link-mobile text-decoration-none text-black">Digitize Your Business</a>
+                    <a href="#blog" class="header-nav-link header-nav-link-mobile text-decoration-none text-black">Blog</a>
+                    <a href="#contact-us" class="header-nav-link header-nav-link-mobile text-decoration-none text-black">Contact Us</a>
+                </nav>
+                <div class="header-social-burger">
+                    <a href="https://twitter.com/" class="header-social-link"><img src="./images/Twitter(Traced).svg" alt="error"></a>
+                    <a href="https://www.facebook.com/" class="header-social-link"><img src="./images/Facebook(Traced).svg" alt="error"></a>
+                    <a href="https://ru.linkedin.com/" class="header-social-link"><img src="./images/Linkedin(Traced).svg" alt="error"></a>
+                    <a href="https://medium.com/" class="header-social-link"><img src="./images/Medium(3).svg" alt="error"></a>
+                </div>
             </div>
-          </div>
+        </div>
+
     </header>
 
     <main>
@@ -80,26 +83,26 @@
             <section id="digital-securities">
                 <div class="digital d-flex flex-column align-items-center">
                     <h2 class="digital-headline">What Are Digital Securities?</h2>
-                    <p class="digital-text">Digital securities represent traditional assets like equity or bonds.<br>
-                        They carry all of the same legal rights of their paper issued counter-parts.</p>
+                    <p class="digital-text"><span>Digital securities represent<br> traditional assets like equity or bonds.</span>
+                        <span>They carry all of the same legal rights of their paper issued counter-parts.</span></p>
                     <div class="digital-cards-wrapper d-flex justify-content-around w-100">
                         <div class="digital-cards-item d-flex flex-column justify-content-center">
                             <img loading="lazy" class="digital-cards-item-img" src="./images/invest.svg" alt="error">
                             <h3 class="card-headline text-center">Invest Any Amount</h3>
-                            <p class="card-text text-center">Start with as little as $1,<br>buy parts of a whole share</p>
+                            <p class="card-text text-center"><span>Start with as little as $1,</span><span>buy parts of a whole share</span></p>
                         </div>
                         <div class="digital-cards-item">
                             <img loading="lazy" class="digital-cards-item-img" src="./images/access.svg" alt="error">
                             <h3 class="card-headline text-center">Access Private Equity</h3>
-                            <p class="card-text text-center">Get access to investments typically<br>reserved for institutions</p>
+                            <p class="card-text text-center"><span>Get access to investments typically</span><span>reserved for institutions</span></p>
                         </div>
                         <div class="digital-cards-item">
                             <img loading="lazy" class="digital-cards-item-img" src="./images/trade.svg" alt="error">
                             <h3 class="card-headline text-center">Trade 24/7</h3>
-                            <p class="card-text text-center">Digital assets don’t sleep,<br>so why should you stop trading?</p>
+                            <p class="card-text text-center"><span>Digital assets don’t sleep,</span><span>so why should you stop trading?</span></p>
                         </div>
                     </div>
-                    <form class="form d-flex" id="form">
+                    <form class="form d-flex">
                         <input type="email" placeholder="E-mail*" required class="form-email form-control">
                         <button class="get-early-access-btn form-btn btn btn-success">Get Early Access</button>
                     </form>
@@ -111,7 +114,7 @@
             <div class="container">
                 <p>
                     Digital Assets are the future of private equity<br>
-                    - Deloitte
+                    <span class="lozung-subtext">- Deloitte</span>
                 </p>
             </div>
         </div>
@@ -128,7 +131,7 @@
                             </div>
                             <div class="products-content-block">
                                 <h3 class="products-content-block-headline">Marketplace</h3>
-                                <p class="products-content-block-text">Browse through stocks on sale<br>from private investors</p>
+                                <p class="products-content-block-text">Browse through stocks on sale<br> from<br> private investors</p>
                             </div>
                         </div>
                         <img loading="lazy" class="phone-front" src="./images/phone_front.svg" alt="error">
@@ -137,48 +140,43 @@
             </section>
         </div>
 
-        <div class="triangle-up"></div>
+        <div class="triangle-up triangle-up-hd"></div>
         <section id="digitize-your-business" class="bg-gray">
             <div class="container">
                 <div class="business">
-                    <h2 class="business-headlline">Digitize Your Business</h2>
+                    <h2 class="business-headline">Digitize Your Business</h2>
+                    <div class="triangle-up triangle-up-mb"></div>
                     <div class="cards-wrapper d-flex justify-content-center">
-                        <div class="row row-cards">
-                            <div class="col">
-                                <div class="card d-flex justify-content-center align-items-center">
-                                    <img loading="lazy" class="card-img" src="./images/raise_capital.svg" alt="error">
-                                    <h3 class="card-headline">Raise Capital</h3>
-                                    <p class="card-text">Expand your investor base<br>globally through the Equitees<br>launchpad</p>
-                                </div>
-                                <div class="card d-flex justify-content-center align-items-center">
-                                    <img loading="lazy" class="card-img" src="./images/lower_fees.svg" alt="error">
-                                    <h3 class="card-headline">Lower Fees</h3>
-                                    <p class="card-text">Removing unnecesary<br>middlemen helps keep more<br>money in your business</p>
-                                </div>
+                        <div class="cards-wrapper d-flex flex-wrap">
+                            <div class="card d-flex justify-content-center align-items-center">
+                                <img loading="lazy" class="card-img" src="./images/raise_capital.svg" alt="error">
+                                <h3 class="digitize-card-headline">Raise Capital</h3>
+                                <p class="digitize-card-text">Expand your investor base globally through the Equitees launchpad</p>
                             </div>
-                            <div class="col">
-                                <div class="card d-flex justify-content-center align-items-center">
-                                    <img loading="lazy" class="card-img" src="./images/automated_compliance.svg" alt="error">
-                                    <h3 class="card-headline">Automated Compliance</h3>
-                                    <p class="card-text">Regulation aware shares<br>means less time on the phone<br>with your lawyers</p>
-                                </div>
-                                <div class="card d-flex justify-content-center align-items-center">
-                                    <img loading="lazy" class="card-img" src="./images/brand_engagement.svg" alt="error">
-                                    <h3 class="card-headline">Brand Engagement</h3>
-                                    <p class="card-text">Increase your customer<br>engagement by rewardind<br>your most loyal patrons</p>
-                                </div>
+                            <div class="card d-flex justify-content-center align-items-center">
+                                <img loading="lazy" class="card-img" src="./images/automated_compliance.svg" alt="error">
+                                <h3 class="digitize-card-headline">Automated Compliance</h3>
+                                <p class="digitize-card-text">Regulation aware shares means less time on the phone with your lawyers</p>
                             </div>
-                            <div class="col">
-                                <div class="card d-flex justify-content-center align-items-center">
-                                    <img loading="lazy" class="card-img" src="./images/digital_transfer_agent.svg" alt="error">
-                                    <h3 class="card-headline">Digital Transfer Agent</h3>
-                                    <p class="card-text">Everything from shareholder ,<br>managment, voting, even<br>dividend distribution</p>
-                                </div>
-                                <div class="card d-flex justify-content-center align-items-center">
-                                    <img loading="lazy" class="card-img" src="./images/liquidity.svg" alt="error">
-                                    <h3 class="card-headline">24/7 Liquidity</h3>
-                                    <p class="card-text">Sacondary trading is hard,<br>we make it easy though the<br>Equiteez Marketplace</p>
-                                </div>
+                            <div class="card d-flex justify-content-center align-items-center">
+                                <img loading="lazy" class="card-img" src="./images/digital_transfer_agent.svg" alt="error">
+                                <h3 class="digitize-card-headline">Digital Transfer Agent</h3>
+                                <p class="digitize-card-text">Everything from shareholder, management, voting, even dividend distribution</p>
+                            </div>
+                            <div class="card d-flex justify-content-center align-items-center">
+                                <img loading="lazy" class="card-img" src="./images/lower_fees.svg" alt="error">
+                                <h3 class="digitize-card-headline">Lower Fees</h3>
+                                <p class="digitize-card-text">Removing unnecessary middlemen helps keep more money in your business</p>
+                            </div>
+                            <div class="card d-flex justify-content-center align-items-center">
+                                <img loading="lazy" class="card-img" src="./images/brand_engagement.svg" alt="error">
+                                <h3 class="digitize-card-headline">Brand Engagement</h3>
+                                <p class="digitize-card-text">Increase your customer engagement by rewarding your most loyal patrons</p>
+                            </div>
+                            <div class="card d-flex justify-content-center align-items-center">
+                                <img loading="lazy" class="card-img" src="./images/liquidity.svg" alt="error">
+                                <h3 class="digitize-card-headline">24/7 Liquidity</h3>
+                                <p class="digitize-card-text">Secondary trading is hard, we make it easy though the Equiteez Marketplace</p>
                             </div>
                         </div>
                     </div>
@@ -196,19 +194,19 @@
                         <div class="news-card col d-flex flex-column">
                             <img loading="lazy" class="news-card-img" src="./images/download-min.png" alt="error">
                             <span class="news-card-date">02.06.20</span>
-                            <p class="news-card-text">In expression an solicitude<br>principles in do. Small for ask shade<br>water manor think men begin. At<br>principle perfectly by sweetness do.</p>
+                            <p class="news-card-text">In expression an solicitude principles in do. Small for ask shade water manor think men begin. At principle perfectly by sweetness do.</p>
                         </div>
             
                         <div class="news-card col d-flex flex-column">
                             <img loading="lazy" class="news-card-img" src="./images/2438389-min.png" alt="error">
                             <span class="news-card-date">02.06.20</span>
-                            <p class="news-card-text">In expression an solicitude principles<br>in do. Small for ask shade water<br>manor think men begin. At principle<br>perfectly by sweetness do.</p>
+                            <p class="news-card-text">In expression an solicitude principles in do. Small for ask shade water manor think men begin. At principle perfectly by sweetness do.</p>
                         </div>
             
                         <div class="news-card col d-flex flex-column">
                             <img loading="lazy" class="news-card-img" src="./images/bangkok_d_850-min.png" alt="error">
                             <span class="news-card-date">02.06.20</span>
-                            <p class="news-card-text">In expression an solicitude principles<br>in do. Small for ask shade water<br>manor think men begin. At principle<br>perfectly by sweetness do.</p>
+                            <p class="news-card-text">In expression an solicitude principles in do. Small for ask shade water manor think men begin. At principle perfectly by sweetness do.</p>
                         </div>
             
                     </div>
@@ -228,7 +226,7 @@
                     </div>
                     
                     <div class="contact-form">
-                        <form class="form d-flex flex-column align-items-end" id="form">
+                        <form class="form d-flex flex-column align-items-end">
                             <div class="form-items-wrapper d-flex flex-column">
                                 <div class="form-item d-flex justify-content-between"> 
                                     <label class="form-input-label" for="name1">Name</label>
@@ -266,14 +264,14 @@
                   <div class="footer-logo">
                     <img loading="lazy" src="./images/Equiteez.svg" alt="error">
                   </div>
-                  <p class="footer-text text-white"><a href="#contact-us" class="footer-nav-link text-decoration-none text-white">Contacn Us</a></p>
+                  <p class="footer-text text-white"><a href="#contact-us" class="footer-nav-link text-decoration-none text-white">Contact Us</a></p>
                   <div class="mobile-nav">
                     <nav class="d-flex flex-column">
                       <a href="#digital-securities" class="footer-nav-link text-decoration-none text-white">What Are Digital Securities?</a>
                       <a href="#products" class="footer-nav-link text-decoration-none text-white">Products</a>
                       <a href="#digitize-your-business" class="footer-nav-link text-decoration-none text-white">Digitize Your Business</a>
                       <a href="#blog" class="footer-nav-link text-decoration-none text-white">Blog</a>
-                      <a href="#contact-us" class="footer-nav-link text-decoration-none text-white">Contacn Us</a>
+                      <a href="#contact-us" class="footer-nav-link text-decoration-none text-white">Contact Us</a>
                     </nav>
                   </div>
                   <div class="footer-social">
@@ -307,27 +305,27 @@
         <div class="modal-signup hidden ">
             <h3 class="modal-signup-headline">Signup For Free</h3>
             <div class="contact-form">
-                <form class="form form-modal-contact d-flex flex-column align-items-end" id="form">
+                <form class="form form-modal-contact d-flex flex-column align-items-end">
                     <div class="form-items-wrapper d-flex flex-column">
-                        <div class="form-item d-flex justify-content-between"> 
+                        <div class="form-item-modal d-flex justify-content-between">
                             <label class="form-input-label" for="name2">Name</label>
                             <input type="text" id="name2" class="form-input form-control">
                         </div>
-                        <div class="form-item d-flex justify-content-between"> 
+                        <div class="form-item-modal d-flex justify-content-between">
                             <label class="form-input-label" for="company2">Company</label>
                             <input type="text" id="company2" class="form-input form-control">
                         </div>
-                        <div class="form-item d-flex justify-content-between"> 
+                        <div class="form-item-modal d-flex justify-content-between">
                             <label class="form-input-label" for="email2">E-mail*</label>
                             <input type="email" id="email2" required class="form-input form-control" >
                         </div>
-                        <div class="form-item d-flex justify-content-between"> 
+                        <div class="form-item-modal d-flex justify-content-between">
                             <label class="form-input-label" for="msg2">Message*</label>
                             <textarea id="msg2" required class="form-input form-input-area form-control"></textarea>
                         </div>
                     </div>
                     <div>
-                        <button class="form-btn contact-form-btn btn btn-dark">Send</button>
+                        <button class="form-btn form-btn-modal contact-form-btn btn btn-dark">Send</button>
                     </div>
                 </form>
             </div>
