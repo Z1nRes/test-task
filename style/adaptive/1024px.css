@@ -1,0 +1,17 @@
+@media (max-width: 1024px){
+    .header-wrapper{ max-width: 768px !important; }
+    .header-logo > img{ max-width: 120px; }
+    .header-nav-link{
+        font-size: 12px !important;
+    }
+    .header-nav-link:not(:last-child){ padding-right: 16px !important; }
+    .header-social-link > img {
+        width: 20px;
+        height: 20px;
+    }
+
+
+    /* footer */
+    .footer-wrapper { max-width: 768px !important; }
+    .copyright-line{ max-width: 768px !important;}
+}
