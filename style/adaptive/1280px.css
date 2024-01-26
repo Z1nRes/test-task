@@ -1,18 +1,107 @@
-@media (max-width: 1280px){
+@media (max-width: 1280px) {
     /* header */
-    .header-wrapper{ max-width: 1024px !important; }
+    .header-wrapper {
+        max-width: 1024px !important;
+    }
 
-    .header-nav-link{
+    .header-nav-link {
         font-size: 16px !important;
         margin-top: 0 !important;
     }
+
     .header-social-link > img {
         width: 25px;
         height: 25px;
     }
 
+    /* equity */
+    .container {
+        max-width: 1024px !important;
+    }
+
+    .equity-content-headline {
+        font-size: 46px !important;
+    }
+
+    .equity-content-text {
+        font-size: 28px !important;
+    }
+
+    .equity-img > img {
+        width: 750px;
+        left: -170px;
+    }
+
+    /* digital */
+    .digital-cards-item {
+        max-width: 300px !important;
+    }
+
+    .digital-cards-item-img {
+        max-width: 300px !important;
+        height: 270px !important;
+    }
+
+    .card-headline {
+        font-size: 24px !important;
+    }
+
+    .card-text {
+        font-size: 18px !important;
+    }
+
+    /* digitize your business */
+    .card {
+        width: 328px !important;
+        height: 314px;
+        margin-bottom: 30px;
+    }
+
+    .cards-wrapper {
+        width: 1024px !important;
+    }
+
+    /* blog */
+    .news {
+        width: 1024px !important;
+    }
+
+    .news-card {
+        max-width: 320px !important;
+    }
+
+    .news-card-img {
+        max-width: 320px !important;
+    }
+
+    .news-card-text {
+        font-size: 18px !important;
+        width: 320px !important;
+    }
+
+    /* contact us */
+    .contact-text {
+        width: 350px;
+    }
+
+    .contact-text > p > br:first-child {
+        display: none;
+    }
+
+    .form-item {
+        width: 500px !important;
+    }
+
+    .form-input {
+        width: 350px !important;
+    }
 
     /* footer */
-    .footer-wrapper { max-width: 1024px !important; }
-    .copyright-line{ max-width: 1024px !important;}
+    .footer-wrapper {
+        max-width: 1024px !important;
+    }
+
+    .copyright-line {
+        max-width: 1024px !important;
+    }
 }

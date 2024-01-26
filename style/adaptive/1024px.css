@@ -1,17 +1,165 @@
-@media (max-width: 1024px){
-    .header-wrapper{ max-width: 768px !important; }
-    .header-logo > img{ max-width: 120px; }
-    .header-nav-link{
+@media (max-width: 1024px) {
+    .header-wrapper {
+        max-width: 768px !important;
+    }
+
+    .header-logo > img {
+        max-width: 120px;
+    }
+
+    .header-nav-link {
         font-size: 12px !important;
     }
-    .header-nav-link:not(:last-child){ padding-right: 16px !important; }
+
+    .header-nav-link:not(:last-child) {
+        padding-right: 16px !important;
+    }
+
     .header-social-link > img {
         width: 20px;
         height: 20px;
     }
 
+    /* equity */
+    .equity {
+        height: 662px !important;
+    }
+
+    .container {
+        max-width: 768px !important;
+    }
+
+    .equity-content-headline {
+        font-size: 30px !important;
+        width: 411px;
+        top: 0 !important;
+    }
+
+    .equity-content-text {
+        font-size: 22px !important;
+        padding-bottom: 30px;
+        margin-bottom: 0;
+    }
+
+    .equity-img > img {
+        width: 650px;
+        left: -140px;
+        top: 60px;
+    }
+
+    .equity-content {
+        width: 662px;
+    }
+
+    .equity-bg {
+        height: 662px !important;
+    }
+
+    /* digital */
+    .digital-cards-item {
+        max-width: 220px !important;
+    }
+
+    .digital-cards-item-img {
+        max-width: 240px !important;
+        height: 240px !important;
+    }
+
+    .digital-text {
+        width: 700px !important;
+        font-size: 20px !important;
+    }
+
+    .card-headline {
+        font-size: 20px !important;
+    }
+
+    .card-text {
+        font-size: 14px !important;
+        white-space: nowrap;
+    }
+
+    .digital-text br:last-child {
+        display: none;
+    }
+
+    .form {
+        max-width: 768px;
+    }
+
+    .form-email, .get-early-access-btn {
+        min-width: 374px !important;
+    }
+
+    /* products */
+    .products-content-block-text {
+        font-size: 18px !important;
+        width: 300px;
+    }
+
+    .products-content-block {
+        margin-right: 8rem !important;
+    }
+
+    /* digitize your business */
+    .card {
+        width: 374px !important;
+        height: 314px;
+        margin-bottom: 30px;
+    }
+
+    .cards-wrapper {
+        width: 768px !important;
+    }
+
+    /* blog */
+    .news {
+        width: 768px !important;
+    }
+
+    .news-card {
+        min-width: 768px !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-card > .news-card-img {
+        max-width: 744px !important;
+        width: 744px !important;
+        height: auto !important;
+    }
+
+    .news-card > .news-card-text {
+        max-width: 768px !important;
+        width: 100% !important;
+        min-width: 768px !important;
+    }
+
+    .news-card-text {
+        font-size: 18px !important;
+        width: 320px !important;
+    }
+
+    /* contact us */
+    .contact-content {
+        margin-right: 90px !important;
+    }
+
+    .form-item {
+        flex-direction: column;
+        width: 20rem !important;
+    }
+
+    .form-input {
+        width: 20rem !important;
+    }
 
     /* footer */
-    .footer-wrapper { max-width: 768px !important; }
-    .copyright-line{ max-width: 768px !important;}
+    .footer-wrapper {
+        max-width: 768px !important;
+    }
+
+    .copyright-line {
+        max-width: 768px !important;
+    }
 }

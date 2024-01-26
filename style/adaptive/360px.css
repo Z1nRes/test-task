@@ -1,179 +1,225 @@
-@media (max-width: 360px){
-    /* header */
-    .header-logo{ margin-right: 3rem; }
-
-    .header{ padding: 0 6rem !important; }
-
-    .burger-menu-wrapper{
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 99;
+@media (max-width: 360px) {
+    .header-logo {
         width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, .3);
-    }
-    .burger-menu{
-        position: absolute;
-        top: 102px;
-        z-index: 99;
-        padding-left: 1.25rem;
-        padding-top: 1.63rem;
-        width: 100%;
-        height: 345px;
-        background-color: #2ECC71;
-    }
-    .header-social-burger{ margin-top: 90px; }
-    .header-nav-link:not(:last-child){ margin-bottom: 0.31rem; }
-    /* equity */
-    .equity{ flex-direction: column; height: 662px; }
-    .equity-bg{ height: 662px !important; }
-    .equity-content{ width: 300px; overflow: hidden; }
-    .equity-content-headline{
-        font-size: 35px !important;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2.5rem;
-        white-space: normal;
-        text-align: center;
-        padding: 7px 0 0 0;
-        top: 0;
-        left: 0;
-    }
-    .equity-content-text{
-        text-align: center;
-        font-size: 1.375rem;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 1.5625rem;
-        padding-bottom: 28px;
-    }
-    .equity-img{ display: none; }
-    .mobile-img{ display: block; width: 320px; height: 400px; }
-    .mobile-img > img{
-        width: 470px;
-        height: auto;
-        position: relative;
-        left: -80px;
-        top: -40px;
-    }
-    .equity-bg{ height: 706px; }
-    .equity-content-btn{ max-width: 300px !important; width: 100%; }
-    /* digital-securities */
-    .digital-headline{
-        text-align: center;
-        font-size: 2.1875rem;
-        line-height: 2rem;
-        margin: 2.5rem 0 1rem 0;
-    }
-    .digital-text{ text-align: center; font-size: 18px; width: 320px; }
-    .digital-text span:first-child br{ display: block; }
-    .digital-cards-wrapper{ flex-direction: column; margin-bottom: 0; }
-    .card-headline{ font-size: 1.375rem; }
-    .card-text{ font-size: 18px; }
-    .digital-cards-item-img{
-        max-width: 14rem;
-        max-height: 14rem;
-        min-width: 14rem;
-        min-height: 14rem;
-    }
-    .digital-cards-item{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 100%;
-        margin-bottom: 2.08rem;
+        justify-content: flex-end;
     }
-    .form{ flex-direction: column; max-width: 320px; }
-    .form-email{ min-width: 320px; margin-bottom: 18px; }
-    .form-btn{ min-width: 320px; }
+
+    .header-logo > img {
+        max-width: 150px;
+    }
+
+    .header-nav-link:not(:last-child) {
+        margin-bottom: 0.31rem;
+    }
+
+    .header-wrapper {
+        height: 105px !important;
+    }
+    .burger-menu {
+        top: 102px;
+    }
+    /* equity */
+    .equity-content {
+        width: 320px !important;
+        height: 709px;
+        margin-left: 20px;
+    }
+
+    .equity-content-headline {
+        font-size: 35px !important;
+        width: 300px;
+        white-space: normal !important;
+        padding-bottom: 0 !important;
+    }
+
+    .equity-content-text {
+        font-size: 22px !important;
+        line-height: 25px !important;
+        width: 300px;
+        padding-bottom: 28px !important;
+        padding-top: 18px !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    .equity-content-btn {
+        max-width: 300px !important;
+        top: 0 !important;
+        left: 0 !important;
+    }
+
+    .mobile-img > img {
+        left: -85px;
+        width: 500px;
+    }
+
+    /* digital-securities */
+    .digital-text {
+        width: 320px !important;
+    }
+
+    .digital-text br:first-child {
+        display: block !important;
+    }
+
+    .digital-text br:last-child {
+        display: block !important;
+    }
+
+    .digital-cards-wrapper {
+        margin-bottom: 0 !important;
+    }
+
+    .card-text {
+        font-size: 18px !important;
+    }
+
+    .form {
+        max-width: 320px;
+    }
+
+    .form-email {
+        min-width: 320px !important;
+    }
+
+    .form-btn {
+        min-width: 320px !important;
+    }
+
     /* lozung */
-    .lozung{ font-size: 1.375rem; }
-    .lozung-subtext{ font-size: 20px; }
-    /* products */
-    .products-headline{ font-size: 2.1875rem; margin-bottom: 1.37rem; }
-    .products-content{ padding: 0; }
-    .products-content-wrapper{ margin-bottom: 1.87rem; flex-direction: column; }
-    .products-content-block{ margin-right: 0; }
-    .products-content-block-headline{ font-size: 1.5625rem; }
-    .products-content-block-text{ font-size: 1.125rem; margin-bottom: 0; }
-    .products-content .products-content-block:first-child .products-content-block-text{ margin-bottom: 33px; }
-    .products-content .products-content-block:last-child .products-content-block-text{ margin-bottom: 16px; }
-    .products-content-block:last-child .products-content-block-text br:first-child{ display: none; }
-    .products-content-block:last-child .products-content-block-text br:last-child{ display: block; }
-    /* digitize */
-    .card{
-        width: 320px;
-        height: 228px;
-        margin-bottom: 15px;
+    .lozung > .container {
+        display: flex;
+        justify-content: center;
     }
-    .card:not(:last-child) { margin-bottom: 15px; }
-    .card-img{ max-width: 60px; max-height: 60px; }
-    .digitize-card-text{ font-size: 1.1rem !important; }
-    .business-headline{
-        padding-bottom: 0;
+
+    .lozung p {
+        width: 320px;
+        font-size: 22px;
+    }
+
+    .lozung-subtext {
+        font-size: 20px;
+    }
+
+    /* digitize your business */
+    .cards-wrapper {
+        width: 320px !important;
+    }
+
+    .card {
+        width: 320px !important;
+        height: 228px !important;
+    }
+
+    .card:not(:last-child) {
+        margin-bottom: 15px !important;
+    }
+
+    .card-img {
+        max-width: 60px !important;
+        max-height: 60px !important;
+    }
+
+    .digitize-card-text {
+        font-size: 18px !important;
+    }
+
+    .business-headline {
+        font-size: 35px !important;
+        padding-bottom: 0 !important;
         margin-bottom: 0;
         background-color: #fff;
     }
-    .triangle-up{
+
+    .triangle-up {
         border-right: 360px solid transparent;
-        border-bottom: 15px solid rgba(196, 196, 196, .1);
+        border-bottom: 15px solid rgba(196, 196, 196, .1) !important;
     }
-    .triangle-up-hd{ display: none; }
-    .triangle-up-mb{ display: block; background-color: #fff; }
-    .triangle-down{
+
+    .triangle-up-hd {
+        display: none;
+    }
+
+    .triangle-up-mb {
+        display: block !important;
+        background-color: #fff;
+    }
+
+    .triangle-down {
         border-right: 360px solid transparent;
-        border-bottom: 15px solid rgba(196, 196, 196, .1);
+        border-bottom: 15px solid rgba(196, 196, 196, .1) !important;
     }
-    .cards-wrapper{
+
+    .cards-wrapper {
         padding-bottom: 10px;
         padding-top: 30px;
         overflow: hidden;
-        width: 360px;
+        width: 360px !important;
         justify-content: center;
     }
-    .card:nth-child(2), .card:nth-child(5){ margin-right: 0; margin-left: 0; }
-    .digitize-card-headline{
-        font-size: 22px;
-        line-height: normal;
-        margin-bottom: 5px;
-        margin-top: 10px;
+
+    .digitize-card-headline {
+        font-size: 22px !important;
+        line-height: normal !important;
+        margin-bottom: 5px !important;
+        margin-top: 10px !important;
     }
+
     /* blog */
-    .news-card-text { width: 320px !important; font-size: 18px; }
-    .news{ max-width: 320px; flex-direction: column !important; }
-    .news-card-img{ width: 320px; }
-    .news-card{ padding: 0 !important; }
-    /* contact-us */
-    .contact{
-        flex-direction: column;
-        padding-left: 20px;
-        padding-top: 16px;
+    .blog {
+        width: 360px !important;
     }
-    .contact-headline{ font-size: 2.1875rem; }
-    .contact-text{ font-size: 1.125rem; }
-    .contact-content{ margin-right: 0; }
-    /* contact-us form */
-    .form{ align-items: flex-start !important; }
-    .form-item{ flex-direction: column; width: 20rem; }
-    .form-input{ width: 20rem; }
-    .contact-form{ margin: 10px 0 0 4px; }
-    .contact-form-btn-wrapper { max-width: 320px !important; }
-    .contact-form-btn{ width: 320px !important; }
+
+    .news-card-text {
+        width: 320px !important;
+        font-size: 18px !important;
+    }
+
+    .news {
+        max-width: 320px !important;
+        flex-direction: column !important;
+    }
+
+    .news-card-img {
+        width: 320px !important;
+    }
+
+    .news-card {
+        padding: 0 !important;
+    }
+
+    /* contact us */
+    .contact-form {
+        max-width: 350px !important;
+        width: 350px !important;
+        margin-left: 10px;
+    }
+
+    .contact-headline {
+        margin-left: 16px !important;
+    }
+
+    .contact-text {
+        width: 320px !important;
+        max-width: 320px !important;
+        margin-left: 16px !important;
+    }
+
+    .contact-form {
+        width: 320px !important;
+        margin-left: 13px !important;
+        margin-top: 11px;
+    }
+
     /* footer */
     .footer-wrapper {
         max-width: 320px !important;
         margin: 0 !important;
     }
-    .copyright-line{
+
+    .copyright-line {
         max-width: 360px !important;
     }
-    /* success modal */
-    .success-modal{ width: 18.25rem; height: 170px; }
-    .success-modal-text{ font-size: 18px; }
-    /* form-modal */
-    .modal-signup{ width: 320px; }
-    .modal-signup-headline{ padding-bottom: 18px; }
-    .form-item-modal{ max-width: 280px; flex-direction: column; }
-    .form-btn-modal{ min-width: 280px !important; width: 280px !important; }
+
 }
