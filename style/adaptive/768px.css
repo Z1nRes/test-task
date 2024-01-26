@@ -79,8 +79,9 @@
         font-size: 20px !important;
         font-style: normal;
         font-weight: 600;
-        line-height: 1.5625rem;
+        line-height: 20px !important;
         padding-bottom: 28px;
+        max-width: 360px;
     }
 
     .equity-img {
@@ -114,7 +115,7 @@
 
     .digital-text {
         font-size: 18px !important;
-        width: 400px !important;
+        width: 360px !important;
     }
 
     .digital-cards-wrapper {

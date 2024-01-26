@@ -222,4 +222,13 @@
         max-width: 360px !important;
     }
 
+    .modal-signup > .contact-form {
+        margin: 0 !important;
+    }
+
+    .form-modal-contact > div > .form-btn-modal{
+        max-width: 260px !important;
+        min-width: 260px !important;
+        width: 260px !important;
+    }
 }
